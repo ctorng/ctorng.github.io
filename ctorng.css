@@ -1,0 +1,469 @@
+/*======================================================================*/
+/* Work Stylesheet                                                      */
+/*======================================================================*/
+/*
+  Some of this formatting comes from Cornell University website templates,
+  but most of it has been customized.
+
+  Author : Christopher Torng
+  Date   : October 2021
+*/
+
+/*----------------------------------------------------------------------*/
+/* Main Body Block                                                      */
+/*----------------------------------------------------------------------*/
+/* According to Cornell website template comments: Note the font-size
+   declaration. Its purpose is to reset the default font size to 10px
+   instead of 16px, allowing font sizes to be specified in ems
+   throughout the stylesheet (1.0em = 10px, 1.3em = 13px, etc.). It is
+   important to specify font sizes in ems instead of pixels, because
+   IE/Win does not allow text to be resized by the user if it is
+   specified in pixels.
+*/
+
+BODY
+{
+  width            : 100%;
+  margin           : 0px;
+  padding          : 0px;
+  background-color : white;
+  background-image : none;
+  /* font-family      : georgia, arial, serif; */
+  font-family      : helvetica;
+  /* translate 1.0em to 10px, 1.5em to 15px, etc. */
+  font-size        : 63.125%;
+  color            : #222;
+  /* background       : #f0eee4; */
+  background       : #eeeeee;
+  overflow-y       : scroll;
+}
+
+
+/*----------------------------------------------------------------------*/
+/* Header                                                               */
+/*----------------------------------------------------------------------*/
+/* Includes both the header name and the navigation bar */
+
+#header-uname
+{
+  background       : #ffffff;
+}
+
+#header-uname-inner
+{
+  max-width        : 755px;
+  margin           : 0px;
+  margin-left      : auto;
+  margin-right     : auto;
+  padding          : 0px;
+  padding-left     : 25px;
+  padding-right    : 25px;
+  background       : #ffffff;
+  /*border : 1px solid blue;*/
+}
+
+#header-uname h1
+{
+  max-width        : 755px;
+  margin           : 0px;
+  margin-left      : auto;
+  margin-right     : auto;
+  padding          : 0px;
+  padding-top      : 10px;
+  padding-bottom   : 10px;
+  font-size        : 2.4em;
+  font-weight      : normal;
+  color            : #73736c;
+  display          : block;
+  /*border : 1px dashed blue;*/
+
+  /* Make header a little larger on iOS safari */
+  -webkit-text-size-adjust : 150%;
+}
+
+#header-nav
+{
+  width            : 100%;
+  background       : #b3b3aa;
+}
+
+#header-nav-inner
+{
+  max-width        : 755px;
+  margin           : 0px;
+  margin-left      : auto;
+  margin-right     : auto;
+  padding          : 0px;
+  padding-left     : 25px;
+  padding-right    : 25px;
+  background       : #b3b3aa;
+  /*border : 1px solid green;*/
+}
+
+#header-nav ul
+{
+  float            : left;
+  margin           : 0;
+  padding          : 0;
+  border-left      : 1px solid #a6a69d;
+  max-width        : 739px;
+  display          : block;
+}
+
+#header-nav li
+{
+  margin           : 0px;
+  padding          : 0px;
+  float            : left;
+  background       : none;
+  display          : block;
+  font-size        : 1em;
+  /*border : 1px solid red;*/
+
+  /* Make item a little larger on iOS safari */
+  -webkit-text-size-adjust : 150%;
+}
+
+#header-nav a
+{
+  float            : left;
+  padding          : 7px 20px;
+  border           : none;
+  border-right     : 1px solid #a6a69d;
+  font-size        : 1.2em;
+  font-weight      : bold;
+  color            : #ffffff;
+  text-decoration  : none;
+}
+
+#header-nav a:hover
+{
+  background       : #a6a69d;
+}
+
+/*----------------------------------------------------------------------*/
+/* Header Block                                                         */
+/*----------------------------------------------------------------------*/
+
+DIV#header
+{
+  margin           : 0em;
+  padding          : 0em;
+}
+
+IMG#headshot
+{
+  margin           : 0em;
+  margin-left      : 2em;
+  margin-bottom    : 2em;
+  padding          : 0em;
+  border           : 1px solid black;
+  float            : right;
+  width            : 200px;
+  height           : 200px;
+}
+
+/*----------------------------------------------------------------------*/
+/* Content Block                                                        */
+/*----------------------------------------------------------------------*/
+
+DIV#content
+{
+  clear            : left;
+  width            : 100%;
+  margin           : 0em;
+  padding          : 0em;
+  /* background       : #f0eee4; */
+  background       : #eeeeee;
+}
+
+DIV#content-inner
+{
+  clear            : left;
+  max-width        : 755px;
+  margin           : 0em;
+  margin-left      : auto;
+  margin-right     : auto;
+  padding-left     : 25px;
+  padding-right    : 25px;
+  padding-top      : 25px;
+  padding-bottom   : 25px;
+}
+
+DIV#content-header h1
+{
+  text-align       : center;
+  font-size        : 2.4em;
+  font-weight      : normal;
+
+}
+
+/* Adjust space between each publication entry */
+
+DIV#content-pub
+{
+  margin-bottom    : 2.0em;
+}
+
+/* Adjust paragraphs within a publication entry. The font weight is
+ * lighter to make the underlined name stand out more */
+
+DIV#content-pub P
+{
+  margin           : 0em;
+  margin-bottom    : 0.5em;
+  padding          : 0em;
+  font-size        : 1.6em;
+  font-weight      : lighter;
+  line-height      : 1.30em;
+}
+
+/* Make <uu> underline with extra whitespace from the bottom of the text */
+
+DIV#content-pub P UU
+{
+  border-bottom    : 1px solid;
+  padding-bottom   : 0px;
+}
+
+/*----------------------------------------------------------------------*/
+/* Copyright                                                            */
+/*----------------------------------------------------------------------*/
+
+DIV#copyright
+{
+  clear            : left;
+  margin           : 0em;
+  margin-left      : auto;
+  margin-right     : auto;
+  padding-left     : 25px;
+  padding-right    : 25px;
+  padding-top      : 20px;
+  padding-bottom   : 10px;
+  background       : #dddddd;
+  color            : gray;
+  font-size        : 0.9em;
+  font-weight      : normal;
+  line-height      : 1.0em;
+}
+
+DIV#copyright P
+{
+  text-align       : center;
+}
+
+/*----------------------------------------------------------------------*/
+/* Paragraphs                                                           */
+/*----------------------------------------------------------------------*/
+
+P
+{
+  margin           : 0em;
+  margin-bottom    : 1.0em;
+  padding          : 0em;
+  font-size        : 1.6em;
+  line-height      : 1.49em;
+}
+
+P.small
+{
+  margin           : 0em;
+  margin-bottom    : 0.0em;
+  padding          : 0em;
+  font-size        : 1.6em;
+  line-height      : 1.30em;
+}
+
+/*----------------------------------------------------------------------*/
+/* Links                                                                */
+/*----------------------------------------------------------------------*/
+
+A:link     { color: #b31b1b; text-decoration: none      }
+A:visited  { color: #b31b1b; text-decoration: none      }
+A:hover    { color: #b31b1b; text-decoration: underline }
+A:active   { color: #b31b1b; text-decoration: underline }
+
+/*----------------------------------------------------------------------*/
+/* Headings                                                             */
+/*----------------------------------------------------------------------*/
+
+H1
+{
+  margin           : 0em;
+  margin-bottom    : 0.7em;
+  padding          : 0em;
+  font-weight      : normal;
+  text-align       : left;
+  font-size        : 2.4em;
+
+  /* Make header a little larger on iOS safari */
+  -webkit-text-size-adjust : 150%;
+}
+
+H1.center
+{
+  text-align       : center;
+}
+
+/* this surrounds H2 with a pair of long dashes */
+
+H2.dashed:before
+{
+  content : "\2014  ";
+}
+
+H2.dashed:after
+{
+  content : "  \2014";
+}
+
+H2.dashed
+{
+  margin           : 0em;
+  margin-bottom    : 0.5em;
+  padding          : 0em;
+  font-weight      : normal;
+  font-size        : 2.0em;
+  text-align       : center;
+  /*text-indent      : -1em;*/
+}
+
+H2
+{
+  margin           : 0em;
+  margin-bottom    : 0.3em;
+  padding          : 0em;
+  padding-top      : 0.0em;
+  font-weight      : normal;
+  font-size        : 1.6em;
+  /*text-align       : center;*/
+  /*text-indent      : -1em;*/
+}
+
+H3
+{
+  margin           : 0em;
+  margin-bottom    : 0.4em;
+  padding          : 0em;
+  padding-top      : 0.7em;
+  font-size        : 1.6em;
+  font-weight      : bold;
+  text-align       : left;
+}
+
+H4
+{
+  margin           : 0em;
+  margin-bottom    : 0.4em;
+  padding          : 0em;
+  padding-top      : 0.0em;
+  font-size        : 1.4em;
+  font-weight      : bold;
+  text-align       : left;
+}
+
+/*----------------------------------------------------------------------*/
+/* Lists                                                                */
+/*----------------------------------------------------------------------*/
+
+UL
+{
+  margin           : 0em;
+  margin-left      : 2.5em;
+  padding          : 0em;
+  padding-top      : 0.5em;
+}
+
+UL UL
+{
+  margin-top       : 0.7em;
+}
+
+UL LI
+{
+  margin-bottom    : 0.7em;
+  padding          : 0em;
+  font-size        : 1.3em;
+  line-height      : 1.39em;
+}
+
+UL.tightlist
+{
+  padding          : 0em;
+  padding-left     : 1.5em;
+  margin           : 0em;
+  margin-bottom    : 0.7em;
+  font-size        : 1.0em;
+  list-style-position : inside;
+}
+
+UL.tightlist LI
+{
+  margin           : 0em;
+  padding          : 0em;
+  font-size        : 1.0em;
+}
+
+UL.medlist
+{
+  padding          : 0em;
+  margin           : 0em;
+/*  margin-left      : 2.5em;*/
+  margin-left      : 3.0em;
+  text-indent      : -2.0em;
+  list-style-position : inside;
+}
+
+UL.medlist LI
+{
+  margin           : 0em;
+  margin-bottom    : 1.0em;
+  padding          : 0em;
+  font-size        : 1.6em;
+}
+
+/* Make <uu> underline with extra whitespace from the bottom of the text */
+
+UL.medlist UU
+{
+  border-bottom    : 1px solid;
+  padding-bottom   : 0px;
+}
+
+UL.medlist LI SPAN.date
+{
+  font-weight      : bold;
+}
+
+UL.medlist LI P
+{
+  margin           : 0.5em;
+  margin-left      : 0.0em;
+  text-indent      : 0.0em;
+  font-size        : 1.0em;
+}
+
+/*----------------------------------------------------------------------*/
+/* Tables                                                               */
+/*----------------------------------------------------------------------*/
+
+TABLE
+{
+  /*font-size     : 1.3em;*/
+  /*line-height   : 1.39em;*/
+}
+
+TABLE TR TD
+{
+  margin        : 0em;
+  padding-left  : 3em;
+  padding-right : 0em;
+}
+
+/*----------------------------------------------------------------------*/
+/* Misc                                                                 */
+/*----------------------------------------------------------------------*/
+
+.float-fix { clear : both; }
+
+

@@ -1,0 +1,313 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd" >
+<!--===================================================================-->
+<!-- Christopher Torng Homepage                                       -->
+<!--===================================================================-->
+
+<html>
+
+<head>
+  <title>Christopher Torng</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="all">
+  <meta name="author" content="Christopher Torng">
+
+  <!-- Tells browser to set website width in px to device width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="stanford.ico" /> -->
+  <link rel="stylesheet" type="text/css" media="screen" href="ctorng.css"/>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Open Graph -->
+
+  <meta property="og:locale"    content="en_US">
+  <meta property="og:url"       content="https://ctorng.com/chips" />
+  <meta property="og:type"      content="website" />
+  <meta property="og:title"     content="Chips" />
+  <meta property="og:site_name" content="Christopher Torng" />
+  <meta property="og:description" content="Chips" />
+</head>
+
+<body class="onecolumn">
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- Header                                                            -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<div id="header">
+  <div id="header-uname">
+    <div id="header-uname-inner">
+      <h1>Christopher Torng</h1>
+    </div>
+  </div>
+  <div id="header-nav">
+    <div id="header-nav-inner">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <!--<li><a href="news.html">News</a></li>-->
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="chips.html">Chips</a></li>
+        <!--<li><a href="cv.html">CV</a></li>-->
+      </ul>
+      <div class="float-fix"></div>
+    </div>
+  </div>
+</div>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- Content                                                       -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<div id="content">
+<div id="content-inner">
+
+<div id="content-header"><h1 class="center">Test Chips and Prototyping</h1></div>
+
+<table cellpadding=0>
+
+  <!-- ...........................................................
+   BRGTC2
+  ................................................................ -->
+
+  <tr>
+    <td align=left valign=middle>
+        <h3>BRGTC2 (2018) --
+        <!-- -->
+         <a href="pdfs/jiang-pymtl-woset2018.pdf">WOSET'18</a>,
+        <!-- -->
+         <a href="pdfs/torng-brgtc2-riscvday2018.pdf">RISCV'18</a>
+        <!-- -->
+        </h3>
+
+        <h4>
+        <!-- -->
+        (<a href="images/brgtc2-die-photo.jpg">die photo</a>,
+        <!-- -->
+         <a href="images/brgtc2-annotated.jpg">annotated chip plot</a>,
+        <!-- -->
+         <a href="images/brgtc2-block-diagram.png">block diagram</a>)
+        <!-- -->
+        </h4>
+        <br>
+
+        <!--
+        Research Purpose: Explore preliminary new ideas on hardware
+        optimization for task-based parallel runtimes and
+        also silicon-validate PyMTL in a more advanced node
+        -->
+
+        <p>I led the development of <i>BRGTC2</i>, a 1x1.25mm
+        6.7M-transistor chip in TSMC 28nm designed and implemented using a
+        new PyMTL hardware modeling framework. The research purpose was to
+        explore preliminary new ideas on hardware optimization for
+        task-based parallel runtimes and to also silicon-validate PyMTL in
+        a more advanced node. The chip includes
+        four RISC-V RV32IMAF cores which share a 32KB instruction cache,
+        32KB data cache, and a single-precision floating point unit
+        along with microarchitectural mechanisms to mitigate the
+        performance impact of resource sharing. The chip also includes a
+        fully synthesizable high-performance PLL originally designed for
+        the DARPA CRAFT project by Ian Galton and Julian Puscar from UC
+        San Diego. Project was led by Christopher Torng with
+        contributions from Shunning Jiang (core RTL design,
+        verification), Khalid Al-Hawaj (cache RTL design, verification),
+        Ivan Bukreyev (PLL porting), Berkin Ilbeyi (Bloom filter and FPU
+        design), Tuan Ta (CL simulation, arbiter RTL design), and Lin
+        Cheng (microbenchmark development).</p>
+    </td>
+    <td align=center valign=middle><a href="images/brgtc2-6520x5230.png"><img src=images/brgtc2-icon.png height=150></a></td>
+  </tr>
+
+  <!-- ...........................................................
+   PCOSYNC
+  ................................................................ -->
+
+  <tr>
+    <td align=left valign=middle>
+        <h3>PCOSYNC (2018)</h3>
+
+        <h4>
+        <!-- -->
+        (<a href="images/pcosync-annotated.png">annotated chip plot</a>)
+        <!-- -->
+        </h4>
+        <br>
+
+        <p>I was the digital ASIC lead for <i>PCOSYNC</i>, a 1.1x2.1mm
+        test chip in TSMC 180nm implementing a low-power and scalable
+        baseband synchronizer aimed at enabling low-power and long-range
+        P2P communication for IoT nodes. One of the key application
+        features of this chip is low-power synchronization of N nodes so
+        that they synchronize and then continue to "tick" at the same
+        time. This digital test chip is a follow-on project for recent
+        work by my colleagues on pulse-coupled oscillators in the analog
+        domain (where I was previously not involved). The project was
+        led by Ivan Bukreyev from Professor Alyssa Apsel's research
+        group, and I led the digital ASIC physical design.</p>
+    </td>
+    <td align=center valign=middle><a href="images/pcosync-icon.png"><img src=images/pcosync-icon.png height=200></a></td>
+  </tr>
+
+  <!-- ...........................................................
+   Celerity
+  ................................................................ -->
+
+  <tr>
+    <td align=left valign=middle>
+        <h3>Celerity System-on-Chip (2017) --
+        <!-- -->
+         <a href="https://doi.org/10.1109/MM.2018.022071133">IEEE Micro'18</a>,
+        <!-- -->
+         <a href="pdfs/ajayi-celerity-carrv2017.pdf">CARRV'17</a>,
+        <!-- -->
+         <a href="pdfs/ajayi-celerity-slides-hotchips2017.pdf">Hot Chips'17</a>
+        <!-- -->
+        </h3>
+
+        <h4>
+        <!-- -->
+        (<a href="images/celerity-die-photo.png">die photo</a>,
+        <!-- -->
+         <a href="images/celerity-annotated.png">annotated chip plot</a>,
+        <!-- -->
+         <a href="images/celerity-block-diagram.png">block diagram</a>,
+        <!-- -->
+         <a href="http://opencelerity.org">site</a>)
+        <!-- -->
+        </h4>
+        <br>
+
+        <!-- Research Purpose: Explore a range of productive hardware
+          design and verification tools: synthesizable analog IP (PLL,
+          digital LDO), high-level synthesis (complex HLS-generated BNN
+          accelerator), Python-based HDLs, area-efficient and
+          high-bandwidth manycore networks (496-core RISC-V tiled
+          manycore), and open-source generators. -->
+
+        <p>I was the Cornell student lead for <i>Celerity</i>, a 5x5mm
+        385M-transistor chip in TSMC 16nm designed and implemented by a
+        large team of over 20 students and faculty from UC San Diego,
+        University of Washington, University of Michigan, and Cornell as
+        part of the DARPA Circuit Realization At Faster Timescales (CRAFT)
+        program. The research purpose was to explore a range of productive
+        hardware design and verification tools. The chip includes a fully
+        synthesizable PLL, digital LDO,
+        five modified Chisel-generated RISC-V Rocket cores, a 496-core
+        RISC-V tiled manycore processor, tightly integrated
+        Rocket-to-manycore communication channels, complex HLS-generated
+        BNN (binarized neural network) accelerator, manycore-to-BNN
+        high-speed links, sleep-mode 10-core manycore, top-level bus
+        interconnect, high-speed source-synchronous off-chip I/O, and a
+        custom flip-chip package. Cornell led the Rocket+BNN accelerator
+        logical/physical design and also made key contributions to the
+        top-level logical/physical integration and design/verification
+        methodology.</p>
+    </td>
+    <td align=center valign=middle><a href="images/celerity.png"><img src=images/celerity-icon.png height=150></a></td>
+  </tr>
+
+  <!-- ...........................................................
+   BRGTC1
+  ................................................................ -->
+
+  <tr>
+    <td align=left valign=middle>
+        <h3>BRGTC1 (2016) --
+        <!-- -->
+         <a href="https://doi.org/10.1109/HOTCHIPS.2016.7936233">Hot
+           Chips'16 Poster Abstract</a>
+        <!-- -->
+        </h3>
+
+        <h4>
+        <!-- -->
+        (<a href="images/brgtc1-die-photo.jpg">die photo</a>,
+        <!-- -->
+         <a href="images/brgtc1-annotated.png">annotated chip plot</a>,
+        <!-- -->
+         <a href="images/brgtc1-block-diagram.png">block diagram</a>)
+        <!-- -->
+         <b><i>
+         </i></b>
+        <!-- -->
+        </h4>
+        <br>
+
+        <!-- Research Purpose: Silicon-validate PyMTL-generated RTL -->
+
+        <p>I led the development of <i>BRGTC1</i>, a 2x2mm
+        1.3M-transistor chip in IBM 130nm designed and implemented using
+        our new PyMTL hardware modeling framework. The research purpose
+        was to silicon-validate PyMTL-generated RTL. The chip includes a
+        simple pipelined 32-bit RISC processor, custom LVDS clock
+        receiver, 16KB of on-chip SRAM, and application-specific
+        accelerators generated using commercial C-to-RTL high-level
+        synthesis tools. Other students who worked on this project:
+        Moyang Wang (co-lead), Bharath Sudheendra and Nagaraj Murali
+        (physical design), Suren Jayasuriya and Robin Ying (full-custom
+        design), Shreesha Srinath (accelerator design), Mark Buckler
+        (toolflow), and Taylor Pritchard (FPGA emulation).</p>
+    </td>
+    <td align=center valign=middle><a href="images/brgtc1-4965x4960.png"><img src=images/brgtc1-icon.png height=150></a></td>
+  </tr>
+
+  <!-- ...........................................................
+   DCS
+  ................................................................ -->
+
+  <tr>
+    <td align=left valign=middle>
+        <h3>DCS analog test chip (2014) --
+        <!-- -->
+         <a href="https://doi.org/10.1109/TCSI.2017.2767585">TCAS'18</a>,
+        <!-- -->
+         <a href="https://doi.org/10.1109/MICRO.2014.52">MICRO'14</a>
+        <!-- -->
+        </h3>
+
+        <h4>
+        <!-- -->
+        (<a href="images/dcs-annotated.jpg">annotated chip plot</a>)
+        <!-- -->
+        </h4>
+        <br>
+
+        <!-- Research Purpose: Directly implement and characterize the
+          voltage regulator designs supporting dynamic capacitance sharing
+        -->
+
+        <p><i>DCS</i> is an acronym that stands for <i>dynamic
+          capacitance sharing</i>, a novel circuits technique for
+        dynamically sharing small units of capacitance across multiple
+        on-chip switched-capacitor voltage regulators for significantly
+        reduced on-chip area and order-of-magnitude faster voltage
+        transition times. The DCS analog test chip features four
+        monolithically integrated switched-capacitor DC-DC converters in
+        65-nm CMOS. I hand-designed the digital configuration components
+        (in Cadence Virtuoso) with a traditional track-based layout
+        approach and also supported the post-silicon validation. The
+        project was in collaboration between Professor Christopher
+        Batten and Professor Alyssa Apsel. The chip design was led by
+        Waclaw Godycki and Ivan Bukreyev, resulting in a circuits
+        journal paper (TCAS'18). I co-led an architecture conference
+        paper (MICRO'14) exploring the architectural applications of the
+        technique.</p>
+    </td>
+    <td align=center valign=middle><a href="images/dcs-icon.jpg"><img
+        src=images/dcs-icon.jpg height=150></a></td>
+  </tr>
+
+</table>
+
+</div>
+</div>
+<div id="copyright"> <p>© 2021 Christopher Torng. Hosted by <a
+     href="https://pages.github.com" target="_blank">GitHub Pages</a>.</p>
+</div>
+</body>
+</html>
+

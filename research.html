@@ -1,0 +1,195 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd" >
+<!--===================================================================-->
+<!-- Christopher Torng Homepage                                       -->
+<!--===================================================================-->
+
+<html>
+
+<head>
+  <title>Christopher Torng</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="all">
+  <meta name="author" content="Christopher Torng">
+
+  <!-- Tells browser to set website width in px to device width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="stanford.ico" /> -->
+  <link rel="stylesheet" type="text/css" media="screen" href="ctorng.css"/>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Open Graph -->
+
+  <meta property="og:locale"    content="en_US">
+  <meta property="og:url"       content="https://ctorng.com/research" />
+  <meta property="og:type"      content="website" />
+  <meta property="og:title"     content="Research" />
+  <meta property="og:site_name" content="Christopher Torng" />
+  <meta property="og:description" content="Research" />
+</head>
+
+<body class="onecolumn">
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- Header                                                            -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<div id="header">
+  <div id="header-uname">
+    <div id="header-uname-inner">
+      <h1>Christopher Torng</h1>
+    </div>
+  </div>
+  <div id="header-nav">
+    <div id="header-nav-inner">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <!--<li><a href="news.html">News</a></li>-->
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="chips.html">Chips</a></li>
+        <!--<li><a href="cv.html">CV</a></li>-->
+      </ul>
+      <div class="float-fix"></div>
+    </div>
+  </div>
+</div>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- Content                                                       -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<div id="content">
+<div id="content-inner">
+
+<div id="content-header"><h1 class="center">Research Projects</h1></div>
+
+<div id="content-header"><h1 class="center">Previous Research Projects</h1></div>
+
+<center><table cellpadding=0>
+
+  <tr>
+    <td align=left valign=middle>
+
+        <h3>Efficient Task-Based Parallel Runtimes</h3>
+
+        <p>Task-based parallel runtimes underpin the parallelization of
+        frameworks for machine learning, graph analytics, and other
+        domains. State-of-the-art graph analytics frameworks like GraphIt
+        and Ligra are designed on top of these runtimes to enable
+        efficient task distribution using dynamic work-stealing
+        algorithms. A cross-stack research approach can expose
+        runtime-level information to hardware to influence both
+        architecture-level and VLSI-level decisions to improve performance
+            and energy efficiency of the runtime (<b><a
+        href="pdfs/torng-aaws-isca2016.pdf">ISCA'16</a></b>). However,
+        walls of abstraction often make it challenging to pass information
+        through layers of the computing stack. I worked on a systematic
+        approach to convey the abstraction of a "task" from the runtime
+        directly to the underlying hardware (<b><a
+        href="pdfs/kim-lta-micro2017.pdf">MICRO'17</a></b>). I designed
+        and fabricated <a href="#chips"><i>BRGTC2</i></a>, a
+        6.7M-transistor chip in TSMC 28nm, to collect performance, area,
+        and energy numbers in an advanced technology node to support
+        future research projects based on hardware acceleration for
+        task-based parallel runtimes (<b><a
+        href="pdfs/torng-brgtc2-riscvday2018.pdf">RISCV'18</a></b>).</p>
+
+      </li>
+    </td>
+    <td align=center valign=middle><a
+        href="images/brgtc2-6520x5230.png"><img src=images/brgtc2-icon.png
+        height=150></a><br><b>BRGTC2 (2018)</b></td>
+  </tr>
+
+  <tr>
+    <td align=left valign=middle>
+
+        <h3>Integrated Voltage Regulation</h3>
+
+        <p>Voltage regulators are responsible for efficiently converting
+        one voltage level into another (e.g., board-level to chip-level).
+        Recent technology trends are making it feasible to replace
+        discrete voltage regulators with integrated voltage regulators,
+        which can significantly reduce system cost by eliminating
+        expensive board-level components. The enabling trends include
+        energy storage elements with better energy densities as well as
+        faster on-chip switches with lower parasitic losses. However,
+        integrated voltage regulators are very large (e.g., similar area
+        as the core it supplies). Together with my colleagues in the
+        circuits field, I applied a cross-stack research approach to
+        explore a novel technique that dynamically shares capacitance
+        across multiple loads for a 40% reduction in regulator area while
+        still enabling fine-grain DVFS (<b><a
+        href="pdfs/godycki-rpdn-micro2014.pdf">MICRO'14</a></b>). I also
+        contributed to the fabrication of a
+        <a href="#chips">switched-capacitor-based prototype in 65nm
+        CMOS</a> resulting in a journal publication in a top-tier circuits
+        venue (<b><a
+        href="pdfs/bukreyev-dcs-tcasi2018.pdf">TCASI'18</a></b>).</p>
+
+      </li>
+    </td>
+    <td align=center valign=middle><a href="images/dcs-icon.jpg"><img
+                                      src=images/dcs-icon.jpg
+                                      height=250></a><br><b>DCS
+                                      (2014)</b></td>
+  </tr>
+
+  <tr>
+    <td align=left valign=middle>
+
+        <h3>Rapid ASIC Design</h3>
+
+        <p>Rising SoC design costs have created a formidable barrier to
+        hardware design when using traditional design tools and
+        methodologies. It is exceedingly difficult for small teams with a
+        limited workforce to build meaningfully complex chips for
+        business ventures (e.g., chip-based startups in machine learning),
+        in academia (i.e., research groups), and even for government goals
+        (e.g., U.S. Department of Defense).
+        To combat some of these challenges, I lead the development of <a
+        href="https://github.com/mflowgen/mflowgen">mflowgen</a>, an
+        open-source tool for integrating agile design principles into ASIC
+        and FPGA design flows.
+        I have also been involved in a
+        range of efforts to reduce the costs and challenges of ASIC design
+        for small teams based on productive toolflows and open-source
+        hardware. I was the Cornell University student lead on the <a
+        href="#chips">Celerity Open-Source 511-Core RISC-V Tiered
+        Accelerator Fabric</a> resulting in top-tier publications in
+        chip-design venues (<b><a
+        href="pdfs/ajayi-celerity-slides-hotchips2017.pdf">HOTCHIPS'17</a></b>),
+        architecture venues (<b><a
+        href="pdfs/davidson-celerity-ieeemicro2018.pdf">IEEE-MICRO'18</a></b>),
+        and various workshops. I was also the project lead for <a
+          href="#chips">BRGTC1</a> and <a href="#chips">BRGTC2</a>, which
+        are silicon prototypes in IBM 130nm and TSMC 28nm designed and
+        implemented using a new open-source Python-based hardware modeling
+        framework called PyMTL developed by my research group. Finally, I
+        contributed to an effort at NVIDIA Research on a modular digital
+        VLSI flow for high-productivity SoC design based on high-level
+        synthesis tools (<b><a
+        href="pdfs/khailany-nvidia-matchlib-dac2018.pdf">DAC'18</a></b>).</p>
+
+      </li>
+    </td>
+    <td align=center valign=middle><a href="images/celerity.png"><img
+                                      src=images/celerity-icon.png
+                                      height=150></a><br><b>Celerity
+                                      (2017)</b></td>
+  </tr>
+
+</table></center>
+
+</div>
+</div>
+<div id="copyright"> <p>© 2021 Christopher Torng. Hosted by <a
+     href="https://pages.github.com" target="_blank">GitHub Pages</a>.</p>
+</div>
+</body>
+</html>
+
