@@ -406,15 +406,14 @@ UL.tightlist
   padding-left     : 1.5em;
   margin           : 0em;
   margin-bottom    : 0.7em;
-  font-size        : 1.0em;
   list-style-position : inside;
 }
 
 UL.tightlist LI
 {
-  margin           : 0em;
+  margin           : 0.2em;
   padding          : 0em;
-  font-size        : 1.0em;
+  font-size        : 1.6em;
 }
 
 UL.medlist
