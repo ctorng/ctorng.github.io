@@ -359,7 +359,20 @@ H4
   padding-top      : 0.0em;
   font-size        : 1.4em;
   font-weight      : bold;
+  line-height      : 1.5em;
   text-align       : left;
+}
+
+H4.center
+{
+  margin           : 0em;
+  margin-bottom    : 0.4em;
+  padding          : 0em;
+  padding-top      : 0em;
+  font-size        : 1.4em;
+  font-weight      : bold;
+  line-height      : 1.5em;
+  text-align       : center;
 }
 
 /*----------------------------------------------------------------------*/
