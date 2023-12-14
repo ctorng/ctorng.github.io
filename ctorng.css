@@ -34,7 +34,8 @@ BODY
   font-size        : 63.125%;
   color            : #222;
   /* background       : #f0eee4; */
-  background       : #eeeeee;
+  /* background       : #eeeeee; */
+  background       : #ffffff;
   overflow-y       : scroll;
 }
 
@@ -174,7 +175,8 @@ DIV#content
   margin           : 0em;
   padding          : 0em;
   /* background       : #f0eee4; */
-  background       : #eeeeee;
+  /* background       : #eeeeee; */
+  background       : #ffffff;
 }
 
 DIV#content-inner
